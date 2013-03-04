@@ -154,3 +154,13 @@
   -webkit-background-clip: @argument;
   background-clip: @argument;
 }
+.selection( @background, @color ) {
+	::selection {
+		background: @background; /* Safari */
+		color: @color;
+	}
+	::-moz-selection {
+		background: @background; /* Firefox */
+		color: @color;
+	}
+}
