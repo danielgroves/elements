@@ -164,3 +164,6 @@
 		color: @color;
 	}
 }
+.rgba( @hex, @alpha: 1 ) {
+  @rgba: rgba(red(@hex), green(@hex), blue(@hex), @alpha);
+}
